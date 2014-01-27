@@ -1,0 +1,19 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.action,name:deviation_wizard"
+msgid "Shipment Deviation"
+msgstr "Desviament d'enviament"
+
+msgctxt "view:shipment.deviation.alert:"
+msgid "Shipment Out Deviation Alert"
+msgstr "Alerta de desviament d'enviament"
+
+msgctxt "view:shipment.deviation.alert:"
+msgid ""
+"You are sending more products than ordered in the sale. They will be "
+"invoiced."
+msgstr ""
+"Esteu enviant més quantitat de producte de la sol·licitada a la comanda de "
+"venda. La diferència es facturarà."

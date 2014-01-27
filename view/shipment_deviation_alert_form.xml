@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- # This file is part of stock_shipment_deviation module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<form string="Shipment Out Deviation Alert">
+    <image name="tryton-dialog-warning" xexpand="0" xfill="0"/>
+    <label string="You are sending more products than ordered in the sale. They will be invoiced."
+        id="selected"
+        yalign="0.0" xalign="0.0" xexpand="1"/>
+</form>

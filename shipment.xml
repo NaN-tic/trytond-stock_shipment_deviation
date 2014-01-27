@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- This file is part of stock_shipment_deviation module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.action.wizard" id="deviation_wizard">
+            <field name="name">Shipment Deviation</field>
+            <field name="wiz_name">shipment.deviation</field>
+            <field name="model">stock.shipment.out</field>
+        </record>
+        <record model="ir.ui.view" id="deviation_alert_view_form">
+            <field name="model">shipment.deviation.alert</field>
+            <field name="type">form</field>
+            <field name="name">shipment_deviation_alert_form</field>
+        </record>
+    </data>
+</tryton>
