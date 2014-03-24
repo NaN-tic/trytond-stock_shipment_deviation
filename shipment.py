@@ -71,9 +71,10 @@ class ShipmentDeviation(Wizard):
                         ])
                 qty_shipped = reduce(lambda x, y: x + y,
                     [m.quantity for m in out_moves])
-                origins = set([o.origin for o in out_moves])
-                qty_ordered = reduce(lambda x, y: x + y,
-                    [o.quantity for o in origins])
-                if qty_shipped > qty_ordered:
-                    return 'alert'
+                origins = [o.origin for o in out_moves if o.origin]
+                if origins:
+                    qty_ordered = reduce(lambda x, y: x + y,
+                        [o.quantity for o in set(origins)])
+                    if qty_shipped > qty_ordered:
+                        return 'alert'
         return 'end'
