@@ -31,13 +31,14 @@ class ShipmentOut:
                 qty_shipped = reduce(lambda x, y: x + y,
                     [m.quantity for m in out_moves])
                 origins = [o.origin for o in out_moves if o.origin]
-                qty_ordered = reduce(lambda x, y: x + y,
-                    set([sl.quantity for sl in origins]))
-                if qty_shipped > qty_ordered:
-                    moves_without_origin = [o for o in out_moves
-                        if not o.origin]
-                    Move.write(moves_without_origin,
-                        {'origin': str(origins[0])})
+                if origins:
+                    qty_ordered = reduce(lambda x, y: x + y,
+                        set([sl.quantity for sl in origins]))
+                    if qty_shipped > qty_ordered:
+                        moves_without_origin = [o for o in out_moves
+                            if not o.origin]
+                        Move.write(moves_without_origin,
+                            {'origin': str(origins[0])})
         super(ShipmentOut, cls).done(shipments)
 
 
