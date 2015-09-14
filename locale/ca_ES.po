@@ -2,9 +2,17 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:shipment.deviation.alert,id:"
+msgid "ID"
+msgstr "ID"
+
 msgctxt "model:ir.action,name:deviation_wizard"
 msgid "Shipment Deviation"
 msgstr "Desviament d'enviament"
+
+msgctxt "model:shipment.deviation.alert,name:"
+msgid "Shipment Deviation Alert"
+msgstr "Alerta de desviament d'enviament"
 
 msgctxt "view:shipment.deviation.alert:"
 msgid "Shipment Out Deviation Alert"
@@ -17,3 +25,7 @@ msgid ""
 msgstr ""
 "Esteu enviant més quantitat de producte de la sol·licitada a la comanda de "
 "venda. La diferència es facturarà."
+
+msgctxt "wizard_button:shipment.deviation,alert,end:"
+msgid "Accept"
+msgstr "Accepta"
