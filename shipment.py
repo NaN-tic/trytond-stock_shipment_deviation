@@ -8,10 +8,10 @@ from trytond.wizard import Button, StateTransition, StateView, Wizard
 
 __all__ = ['ShipmentOut', 'ShipmentDeviationAlert',
     'ShipmentDeviation']
-__metaclass__ = PoolMeta
 
 
 class ShipmentOut:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.shipment.out'
 
     @classmethod
